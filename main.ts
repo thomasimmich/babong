@@ -1,3 +1,41 @@
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    fire = sprites.create(img`
+. . . 2 . . . . 
+. . . . . . . . 
+. . 2 . 2 . 4 . 
+. . . . 2 . . 2 
+. . . . 2 2 . . 
+. . . . 4 4 . . 
+. . . 2 5 4 . . 
+. . 2 4 5 4 2 . 
+. 2 4 5 5 4 2 . 
+. 2 4 5 5 4 2 . 
+. 2 5 5 4 2 . . 
+. . 2 4 2 . . . 
+`, SpriteKind.Player)
+    fire.startEffect(effects.fountain, 200)
+})
+controller.A.onEvent(ControllerButtonEvent.Released, function () {
+    fire.setImage(img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`)
+})
+let fire: Sprite = null
 scene.setBackgroundColor(9)
 let balloon = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -76,17 +114,3 @@ d d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d d d 1 d 1 d 1 d 1 d d
 . . d d d d d d . . . d d d d d d d . . . . . . . . . . . . 
 . . . . . . . . . . . . d d d d d . . . . . . . . . . . . . 
 `, SpriteKind.Enemy)
-let fire = sprites.create(img`
-. . . 2 . . . . 
-. . . . . . . . 
-. . 2 . 2 . 4 . 
-. . . . 2 . . 2 
-. . . . 2 2 . . 
-. . . . 4 4 . . 
-. . . 2 5 4 . . 
-. . 2 4 5 4 2 . 
-. 2 4 5 5 4 2 . 
-. 2 4 5 5 4 2 . 
-. 2 5 5 4 2 . . 
-. . 2 4 2 . . . 
-`, SpriteKind.Player)

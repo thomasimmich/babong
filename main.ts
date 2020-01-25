@@ -1,4 +1,5 @@
-let mySprite = sprites.create(img`
+scene.setBackgroundColor(9)
+let balloon = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -50,3 +51,28 @@ let mySprite = sprites.create(img`
 . . . . . . . . . . . . . . . . e e e e e e e . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . e e e e e . . . . . . . . . . . . . . . . 
 `, SpriteKind.Player)
+let cloud = sprites.create(img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . d d d d d d d d d d d . . . . . . . . . . 
+. . . . . . . . d d 1 d 1 d 1 d 1 1 1 1 d d . . . . . . . . 
+. . . . . . d d d 1 d 1 d 1 d 1 d 1 1 1 1 1 d . . . . . . . 
+. . . . . d 1 d 1 d 1 d 1 d 1 d 1 1 1 1 1 1 1 d d . . . . . 
+. . . . d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 1 1 1 1 1 d d . . . 
+. . . d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 1 1 1 1 1 d . . . 
+. . d d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 1 1 1 d . . 
+. d 1 d d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 1 1 d . . 
+d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 1 1 d . 
+d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 1 d . 
+d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d . 
+d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d d . 
+d d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d d 
+d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d d d 
+d d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d d d 1 d 1 d 1 d 1 d d 
+. d d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d d d d d 1 d 1 d 1 d d d 
+. d d 1 d d d d d d d d d 1 d 1 d d d d . d d d d d d d d . 
+. d d d d d d d . . d d d d 1 d d d d . . . . . . d d d d . 
+. . d d d d d d . . . d d d d d d d . . . . . . . . . . . . 
+. . . . . . . . . . . . d d d d d . . . . . . . . . . . . . 
+`, SpriteKind.Enemy)

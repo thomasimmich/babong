@@ -76,3 +76,17 @@ d d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d d d 1 d 1 d 1 d 1 d d
 . . d d d d d d . . . d d d d d d d . . . . . . . . . . . . 
 . . . . . . . . . . . . d d d d d . . . . . . . . . . . . . 
 `, SpriteKind.Enemy)
+let fire = sprites.create(img`
+. . . 2 . . . . 
+. . . . . . . . 
+. . 2 . 2 . 4 . 
+. . . . 2 . . 2 
+. . . . 2 2 . . 
+. . . . 4 4 . . 
+. . . 2 5 4 . . 
+. . 2 4 5 4 2 . 
+. 2 4 5 5 4 2 . 
+. 2 4 5 5 4 2 . 
+. 2 5 5 4 2 . . 
+. . 2 4 2 . . . 
+`, SpriteKind.Player)

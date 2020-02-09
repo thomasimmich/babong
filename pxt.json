@@ -1,7 +1,8 @@
 {
     "name": "Babong",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "storyboard": "*"
     },
     "description": "",
     "files": [

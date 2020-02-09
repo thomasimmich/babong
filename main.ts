@@ -89,3 +89,32 @@ f f 6 f 6 1 6 1 6 1 6 1 6 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 4 4 4 1 1 1 1
 . . . . . . . . . . . . . . . . e e e e e e e . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . e e e e e . . . . . . . . . . . . . . . . 
 `, SpriteKind.Player)
+let bigCloud = sprites.create(img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . d d d d d d d d d d d . . . . . . . . . . 
+. . . . . . . . d d 1 d 1 d 1 d 1 1 1 1 d d . . . . . . . . 
+. . . . . . d d d 1 d 1 d 1 d 1 d 1 1 1 1 1 d . . . . . . . 
+. . . . . d 1 d 1 d 1 d 1 d 1 d 1 1 1 1 1 1 1 d d . . . . . 
+. . . . d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 1 1 1 1 1 d d . . . 
+. . . d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 1 1 1 1 1 d . . . 
+. . d d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 1 1 1 d . . 
+. d 1 d d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 1 1 d . . 
+d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 1 1 d . 
+d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 1 d . 
+d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d . 
+d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d d . 
+d d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d d 
+d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d d d 
+d d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d 1 d d d 1 d 1 d 1 d 1 d d 
+. d d d 1 d 1 d 1 d 1 d 1 d 1 d 1 d d d d d 1 d 1 d 1 d d d 
+. d d 1 d d d d d d d d d 1 d 1 d d d d . d d d d d d d d . 
+. d d d d d d d . . d d d d 1 d d d d . . . . . . d d d d . 
+. . d d d d d d . . . d d d d d d d . . . . . . . . . . . . 
+. . . . . . . . . . . . d d d d d . . . . . . . . . . . . . 
+`, SpriteKind.Enemy)
+bigCloud.setPosition(121, 22)
+game.onUpdateInterval(100, function () {
+    bigCloud.x += -1
+})

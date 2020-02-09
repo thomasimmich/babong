@@ -42,6 +42,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     balloon.startEffect(effects.spray, 100)
     music.playMelody("E D G F B A C5 B ", 120)
+    game.reset()
 })
 let balloon: Sprite = null
 let isCooling = false
